@@ -152,7 +152,7 @@ const LocationCard: React.FC<LocationCardProps> = ({ data, onCorrect, step, tota
                       isLocked ? 'bg-slate-200 text-slate-400' : 'modern-gradient text-white shadow-indigo-500/30'
                     }`}
                   >
-                    Submit Testimony
+                    Submit Clue
                   </button>
                 </div>
               )}
