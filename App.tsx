@@ -206,7 +206,7 @@ const App: React.FC = () => {
   const currentLocation = LOCATIONS[currentLocationKey];
 
   return (
-    <Layout title={state.role === TeamRole.TEAM_1 ? 'Path One' : 'Path Two'} onBack={resetGame}>
+    <Layout title={state.role === TeamRole.TEAM_1 ? 'Forward Path' : 'Reverse Path'} onBack={resetGame}>
       <LocationCard 
         data={currentLocation} 
         onCorrect={handleCorrectAnswer}
