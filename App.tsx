@@ -86,7 +86,7 @@ const App: React.FC = () => {
               <div className="flex items-center gap-5">
                 <div className="w-14 h-14 modern-gradient rounded-2xl flex items-center justify-center text-white font-serif-refined italic text-2xl shadow-lg shadow-indigo-200 ring-4 ring-slate-50">1</div>
                 <div className="text-left">
-                  <span className="block text-lg font-bold text-slate-900">Team Alpha</span>
+                  <span className="block text-lg font-bold text-slate-900">Team One</span>
                   <span className="text-[10px] uppercase font-black tracking-widest text-slate-400">Path One</span>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const App: React.FC = () => {
               <div className="flex items-center gap-5">
                 <div className="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center text-white font-serif-refined italic text-2xl shadow-lg ring-4 ring-slate-50">2</div>
                 <div className="text-left">
-                  <span className="block text-lg font-bold text-slate-900">Team Beta</span>
+                  <span className="block text-lg font-bold text-slate-900">Team Two</span>
                   <span className="text-[10px] uppercase font-black tracking-widest text-slate-400">Path Two</span>
                 </div>
               </div>
@@ -206,7 +206,7 @@ const App: React.FC = () => {
   const currentLocation = LOCATIONS[currentLocationKey];
 
   return (
-    <Layout title={state.role === TeamRole.TEAM_1 ? 'Alpha Path' : 'Beta Path'} onBack={resetGame}>
+    <Layout title={state.role === TeamRole.TEAM_1 ? 'Path One' : 'Path Two'} onBack={resetGame}>
       <LocationCard 
         data={currentLocation} 
         onCorrect={handleCorrectAnswer}
