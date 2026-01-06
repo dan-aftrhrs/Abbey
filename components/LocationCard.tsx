@@ -80,8 +80,8 @@ const LocationCard: React.FC<LocationCardProps> = ({ data, onCorrect, step, tota
         {isLocked && (
           <div className="absolute inset-0 z-50 bg-slate-900/95 backdrop-blur-md flex flex-col items-center justify-center p-8 text-center animate-in fade-in duration-300">
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 border-t-indigo-400 animate-spin mb-6"></div>
-            <h4 className="text-white font-serif-refined italic text-xl mb-2">Moment of Reflection</h4>
-            <p className="text-slate-400 text-xs mb-8 max-w-[200px]">The path remains hidden for a moment. Contemplate your journey.</p>
+            <h4 className="text-white font-serif-refined italic text-xl mb-2">Wrong answer</h4>
+            <p className="text-slate-400 text-xs mb-8 max-w-[200px]">Try again later.</p>
             <div className="text-5xl font-extrabold text-white tabular-nums tracking-tighter">
               {cooldown}
             </div>
